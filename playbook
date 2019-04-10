@@ -1,0 +1,9 @@
+---
+- hosts: centos
+  tasks:
+    - name: git clone plb ci-cd repository
+      git:
+        repo: 'https://github.com/plb-formation/plb-cicd.git'
+        dest:  ~/plb-cicd
+    - name: start up plb ci-cd containers
+      command: chdir=/home/{{ansible_user}}/plb-cicd docker-compose up -d
