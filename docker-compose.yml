@@ -29,6 +29,7 @@ services:
     - nexus
     - sonar
     - jmeter
+    - gitlab-ce
   environment:
     - NEXUS_PORT=8081
     - SONAR_PORT=9000
