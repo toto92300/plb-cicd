@@ -24,7 +24,7 @@ services:
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - /usr/bin/docker:/usr/bin/docker
-    - /opt/tutorial/jenkins/:/var/jenkins_home
+    - /opt/jks/:/var/jenkins_home
   depends_on:
     - nexus
     - sonar
@@ -85,9 +85,9 @@ services:
     - "8181:80"
     - "2222:22"
   volumes:
-    - /opt/tutorial/gitlab/config:/etc/gitlab
-    - /opt/tutorial/gitlab/logs:/var/log/gitlab
-    - /opt/tutorial/gitlab/data:/var/opt/gitlab
+    - /opt/gitlab/config:/etc/gitlab
+    - /opt/gitlab/logs:/var/log/gitlab
+    - /opt/gitlab/data:/var/opt/gitlab
 
 
 
