@@ -2,7 +2,7 @@ FROM centos:7
 
 MAINTAINER Herve Meftah <dockerlite@gmail.com>
 
-ENV  JMETER_VERSION=5.1
+ENV  JMETER_VERSION=5.1.1
 
 RUN yum -y update && \
     yum -y install htop iotop, iftop git curl wget && \
