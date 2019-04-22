@@ -11,7 +11,7 @@ RUN yum -y update && \
     mkdir /results
 
 WORKDIR /tmp
-RUN wget https://www-eu.apache.org/dist//jmeter/source/apache-jmeter-${JMETER_VERSION}.tgz && \
+RUN wget https://www-eu.apache.org/dist//jmeter/binaries/apache-jmeter-${JMETER_VERSION}.tgz && \
     tar -zxvf apache-jmeter-${JMETER_VERSION}.tgz -C /jmeter
 
 VOLUME ["/results","/scripts"]
