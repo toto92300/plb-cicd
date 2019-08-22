@@ -106,7 +106,7 @@ This is because '/usr/bin/docker' is the docker binary, see [Issue 24](https://g
 
 | *Tool* | *Link* | *Credentials* |
 | ------------- | ------------- | ------------- |
-| Jenkins | http://${docker-machine ip default}:18080/ | no login required |
+| Jenkins | http://${docker-machine ip default}:18080/ | admin/12345678 |
 | SonarQube | http://${docker-machine ip default}:19000/ | admin/admin |
 | Nexus | http://${docker-machine ip default}:18081/nexus | admin/admin123 |
 | GitLab | http://${docker-machine ip default}/ | root/5iveL!fe |
@@ -117,7 +117,7 @@ This is because '/usr/bin/docker' is the docker binary, see [Issue 24](https://g
 
 | *Tool* | *Link* | *Credentials* |
 | ------------- | ------------- | ------------- |
-| Jenkins | http://localhost:18080/ | no login required |
+| Jenkins | http://localhost:18080/ | admin/12345678 |
 | SonarQube | http://localhost:19000/ | admin/admin |
 | Nexus | http://localhost:18081/nexus | admin/admin123 |
 | GitLab | http://localhost | root/5iveL!fe |
